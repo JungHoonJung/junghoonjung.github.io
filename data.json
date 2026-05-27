@@ -28,16 +28,16 @@
     "cv": {
         "Academic careers": [
             {
-                "date": "2026.03 &ndash; 2026.09",
-                "position": "Postdoctoral Researcher",
-                "affiliation": "University of Seoul",
-                "PI": "Prof. Young-Ho Eom"
-            },
-            {
                 "date": "2026.05 &ndash; Present",
                 "position": "Postdoctoral Researcher",
                 "affiliation": "Korea University",
                 "PI": "Prof. Kwang-Il Goh"
+            },
+            {
+                "date": "2026.03 &ndash; 2026.09",
+                "position": "Postdoctoral Researcher",
+                "affiliation": "University of Seoul",
+                "PI": "Prof. Young-Ho Eom"
             }
         ],
         "education": [
