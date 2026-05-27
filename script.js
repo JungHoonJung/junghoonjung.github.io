@@ -60,6 +60,17 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('interests-list').innerHTML = interestsHTML;
 
         // 3. CV Section
+        const academicCareersHTML = (data.cv["Academic careers"] || []).map(career => `
+            <div class="cv-item">
+                <div class="cv-date">${career.date}</div>
+                <div class="cv-details">
+                    <h4>${career.position}, ${career.affiliation}</h4>
+                    ${career.PI ? `<p class="advisor">PI: ${career.PI}</p>` : ''}
+                </div>
+            </div>
+        `).join('');
+        document.getElementById('academic-careers-list').innerHTML = academicCareersHTML;
+
         const educationHTML = data.cv.education.map(edu => `
             <div class="cv-item">
                 <div class="cv-date">${edu.date}</div>
